@@ -1,4 +1,4 @@
-name: Terraform EC2 Instance Creation Using Workflow
+name: EC2 Instance
 
 on:
   workflow_dispatch:
