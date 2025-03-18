@@ -48,20 +48,20 @@ jobs:
       
       - name: Checkout Terraform repository
         run: |
-          git clone git@github.com:bh-gaur/terraform.git
+          git clone git@github.com:bh-gaur/aws.git
           
       - name: Terraform Init
         run: |
-          cd terraform/aws-cloud/ec2/
+          cd aws/project/docker-test
           terraform init
           terraform validate  # Ensures Terraform configuration is valid
 
       - name: Terraform Plan
         run: |
-          cd terraform/aws-cloud/ec2/
+          cd aws/project/docker-test
           terraform plan -out=tfplan
 
       - name: Terraform Apply
         run: |
-          cd terraform/aws-cloud/ec2/
+          cd aws/project/docker-test
           terraform apply -auto-approve tfplan
