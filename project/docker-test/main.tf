@@ -51,7 +51,7 @@ resource "aws_instance" "example_instance" {
     ami = var.ami_id                  # ami_id for instance
     instance_type = var.instance_type # instance type 
     key_name = var.key_name           # attach key pair to instance
-    security_groups = [aws_security_group.allow_ports.id]  # attach security group to instance
+    security_groups = [aws_security_group.allow_ports.name]  # attach security group to instance
 
     tags = {
       Name = var.name                 # instance name 
