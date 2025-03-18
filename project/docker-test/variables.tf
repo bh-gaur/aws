@@ -37,5 +37,5 @@ variable "name" {
 variable "vpc_id" {
     description = "VPC for instance"
     type = string
-    default = "default"
+    default = "vpc-0d0ff3525b3b544bb"
 }
