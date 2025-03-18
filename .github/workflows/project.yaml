@@ -19,7 +19,7 @@ jobs:
       - name: Trigger docker Workflow to build image
         run: |
           curl -X POST \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Authorization: Bearer ${{ secrets.MY_TOKEN }}" \
             -H "Accept: application/vnd.github.v3+json" \
             https://api.github.com/repos/bh-gaur/docker/dispatches \
             -d '{"event_type": "trigger-workflow-1"}'
