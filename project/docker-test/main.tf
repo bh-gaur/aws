@@ -1,6 +1,6 @@
 #Create Security Group
 resource "aws_security_group" "allow_ports" {
-  name        = "my-project-sg"
+  name        = "my-first-project-sg"
   description = "Security group allowing SSH, HTTP, HTTPS, and custom application ports"
   vpc_id      = var.vpc_id  # Replace with your VPC ID
 
@@ -46,7 +46,7 @@ resource "aws_security_group" "allow_ports" {
 }
 
 # Create EC2 machine 
-resource "aws_instance" "my_instance" {
+resource "aws_instance" "example_instance" {
     # count = var.num                 # how many instance will create
     ami = var.ami_id                  # ami_id for instance
     instance_type = var.instance_type # instance type 
