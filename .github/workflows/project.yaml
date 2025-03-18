@@ -1,4 +1,4 @@
-name: EC2 Instance
+name: Starting project
 
 on:
   workflow_dispatch:
