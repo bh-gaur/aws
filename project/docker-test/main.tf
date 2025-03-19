@@ -109,8 +109,8 @@ resource "aws_instance" "example_instance" {
                 # Verify installation (optional)
                 sudo docker --version
                 
-                docker pull bgdevopslearn/test:latest
-                docker run -d -p 3000:3000 test
+                sudo docker pull bgdevopslearn/test:latest
+                sudo docker run -d -p 3000:3000 bgdevopslearn/test
                 EOF
 
 }
