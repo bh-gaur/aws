@@ -24,6 +24,10 @@ jobs:
             https://api.github.com/repos/bh-gaur/docker/dispatches \
             -d '{"event_type": "trigger-workflow-1"}'
 
+      - name: Sleep until triggered job complete
+        run: |
+            sleep 60
+
       - name: Checkout repository
         uses: actions/checkout@v3  # Use the latest stable version of actions/checkout
       
