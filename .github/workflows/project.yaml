@@ -6,7 +6,7 @@ on:
   #   branches:
   #     - 'main'
   #   paths:
-  #     - 'aws-cloud/ec2/*'
+  #     - 'project/docker-test/*'
   # pull_request:
   #   branches:
   #     - 'main'
