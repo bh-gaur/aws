@@ -12,11 +12,11 @@ terraform {
 }
 
 resource "aws_s3_bucket" "my_bucket-1" {
-    bucket = "${var.name}-source"
+  bucket = "${var.name}-source"
 }
 
 resource "aws_s3_bucket" "my_bucket-2" {
-    bucket = "${var.name}-destination"
+  bucket = "${var.name}-destination"
 }
 
 resource "aws_iam_role" "lambda_exec" {
