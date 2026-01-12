@@ -1,9 +1,56 @@
-# Ignore Terraform working directory
-*.terraform/
+############################
+# Terraform State Files
+############################
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
 
-# Ignore Terraform lock file
+############################
+# Terraform Working Directory
+############################
+.terraform/
 .terraform.lock.hcl
 
-*terrafrom.tfstate
+############################
+# Terraform Variables (Secrets)
+############################
+*.tfvars
+*.tfvars.json
 
-*terrafrom.tfstate.backup
+############################
+# Override Files
+############################
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+############################
+# CLI Configuration Files
+############################
+.terraformrc
+terraform.rc
+
+############################
+# Crash Logs
+############################
+crash.log
+crash.*.log
+
+############################
+# Sensitive Keys & Credentials
+############################
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+*.env
+
+############################
+# OS & Editor Files
+############################
+.DS_Store
+.idea/
+.vscode/
+*.swp
